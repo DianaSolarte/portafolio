@@ -1,7 +1,12 @@
 body {
-    background-image: url('ImagenDeFondo.png');
+    background-image: url('ImagenDeFondo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+.h4 .parrafo{
+    text-align: center;
 }
 
 .h1{
@@ -17,4 +22,9 @@ body {
 
 .nav-link {
     color: #fff!important;
+}
+
+.footer {
+    background: rgb(179,1,255) !important;
+    background: linear-gradient(347deg, rgba(179,1,255,1) 70%, rgba(179,1,255,1) 70%);
 }

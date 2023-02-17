@@ -1,12 +1,10 @@
 {% extends 'layout.html' %}
     {% block content %}
-        <h1>Post</h1>
+        <h1 style="color:#ffff">Post</h1>
 
-        <h2>{{post.title}}</h2>
-        <h4>{{post.date}}</h4>
+        <h2 style="color:#ffff">{{post.title}}</h2>
+        <h4 style="color:#ffff">{{post.date}}</h4>
 
-        <p>{{post.description|safe}}</p>
+        <p style="color:#ffff" >{{post.description|safe}}</p>
         <img src ="{{post.image.url}}" alt="{{post.title}}">
     {% endblock %}
-
-{% endblock %}

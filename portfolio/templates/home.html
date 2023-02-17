@@ -4,15 +4,15 @@
 {% block content %}
 
 {% load static %}
-<img class= "logo" src={% static 'logot.png' %} width="450px"; margin-left:"20px";vspace="20">
-<img src={% static 'Avatar.png' %} width="700px">
-<h1 style= "color:#ffff"; "align = center"; > Hi, I'm Diana Solarte</h1>
-<h4 style= "color:#ffff">Full-Stack Development <br>@SolartenaDev</h4>
+<img class= "logo" src={% static 'logoPortada.png' %} width="500px"; style=  "margin-left:20px"; "margin-top:100px"; >
+<img src={% static 'Avatar.png' %} width="720px">
 
-<h1 style= "color:#ffff">Mis Proyectos</h1>
+
+
+<h1 style="color:#ffff"; "margin-left:20px" >Mis Proyectos</h1>
     <div class="d-flex flex-wrap">
     {% for project in projects %}
-    <div class="card col-md-3" style=" margin: 10px;">
+    <div class="card col-md-3" style=" margin: 10px 10px 10px 10px;">
         <img src="{{project.image.url}}" class="card-img-top" alt="{{project.title}}">
         <div class="card-body">
             <h5 class="card-title">{{project.title}}</h5>

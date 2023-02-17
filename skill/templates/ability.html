@@ -1,0 +1,18 @@
+
+{% extends 'layout.html' %}
+{% block content %}
+
+<h1 style= "color:#ffff">Mis Skills</h1>
+
+
+    <div class="d-flex flex-wrap">
+    {% for ability in abilitys %}
+    <div class="card col-md-3" style=" margin: 10px;">
+        <img src="{{ability.image.url}}" class="card-img-top" alt="{{ability.title}}">
+        <div class="card-body">
+            <h5 class="card-title">{{ability.title}}</h5>
+            <p class="card-text">{{ability.description}}</p>
+        </div>
+    </div>
+    {% endfor %}
+{% endblock %}
